@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    
+    <script type="text/javascript">
+        alert("Assalamualaikum");
+        window.alert("saya sedang belajar javascript");
+    </script>
+    <title>Tugas Web</title>
+</head>
+<body>
+        <nav class="wrapper">
+            <div class="Brand">
+                <div class="firstname">Task</div>
+                <div class="lastname">.com</div>
+            </div>
+        <ul class="navigasi">
+            <li><a href="#Materi tugas 8">Materi 8</a></li>
+            <li><a href="#Materi tugas 9">Materi 9</a></li>
+            <li><a href="#Materi tugas 10">Materi 10</a></li>
+            <li><a href="#Materi tugas 11">Materi 11</a></li>
+        </ul>
+        </nav>
+    <div class="fcontainer">
+        <div class="t1"> 
+        <h1 id="Materi tugas 8"> Materi tugas 8</h1>
+        <p> Aplikasi javascript dalam html/css</p>
+        <p> Membuat output sederhana berupa text/string</p>
+        <h2> Mari membuat tombol untuk menampilkan tanggal dan jam
+        </h2>
+       <button type="button" onclick="document.getElementById('tanggal').innerHTML=Date()">
+       Coba klik tombol ini!</button>
+       <p id="tanggal"></p>
+       <br></br>
+       <h1 id="Materi tugas 9">Materi tugas 9</h1>
+       <h2> Mari kita membuat kalkulator sederhana</h2>
+       <h3>Klik link dibawah untuk membuka kalkulator! </h3>
+       <h4><a href="tugas9.html"> CLICK ME!</a></h4>
+       <br></br>
+       <h1 id="Materi tugas 10">Materi tugas 10</h1>
+       <h2>1. Apa bedanya if else dengan switch case?</h2>
+       <p>Berikut ini adalah perbedaan utama antara pernyataan if-else dan switch-case:</p>
+       <p>a.Sintaks: Pernyataan if-else menggunakan ekspresi boolean untuk menentukan blok kode yang akan dieksekusi,</p><p> sementara pernyataan switch-case menggunakan nilai untuk menentukan case yang akan dieksekusi.</p>
+       <p>b.Kondisi ganda: Pernyataan if-else memungkinkan Anda mengevaluasi beberapa kondisi menggunakan beberapa klausa if,</p>
+        sementara pernyataan switch-case hanya memungkinkan Anda menguji satu nilai terhadap beberapa case.</p>
+        <p>c.Case default: Pernyataan switch-case memiliki case default yang dieksekusi</p><p>ketika tidak ada case lain yang cocok dengan nilai yang sedang diuji, sementara pernyataan if-else tidak memiliki case default.</p>
+        <p>d.Pernyataan break: Pernyataan switch-case menggunakan pernyataan break untuk</p><p> keluar dari blok switch, sementara pernyataan if-else tidak menggunakan pernyataan break.</p>
+       <h2>2. Ini adalah contoh penggunaan Switch dengan button</h2>
+       <p>Klik tombol di bawah ini untuk mengetahui hari apa sekarang:</p>
+
+<button onclick="findDay()">Cek Hari</button>
+
+<p id="day"></p>
+
+<script>
+function findDay() {
+  var today = new Date();
+  var day = today.getDay();
+
+  switch (day) {
+    case 0:
+      document.getElementById("day").innerHTML = "Hari ini adalah Minggu";
+      break;
+    case 1:
+      document.getElementById("day").innerHTML = "Hari ini adalah Senin";
+      break;
+    case 2:
+      document.getElementById("day").innerHTML = "Hari ini adalah Selasa";
+      break;
+    case 3:
+      document.getElementById("day").innerHTML = "Hari ini adalah Rabu";
+      break;
+    case 4:
+      document.getElementById("day").innerHTML = "Hari ini adalah Kamis";
+      break;
+    case 5:
+      document.getElementById("day").innerHTML = "Hari ini adalah Jumat";
+      break;
+    case 6:
+      document.getElementById("day").innerHTML = "Hari ini adalah Sabtu";
+      break;
+  }
+}
+</script>
+<br></br>
+        <h1 id="Materi tugas 11">Materi tugas 11</h1>
+        <h2>1. Apa itu looping?</h2>
+        <p>Fungsi looping (atau perulangan) adalah sebuah konsep pemrograman yang memungkinkan kode</p>
+        <p> untuk dijalankan berulang kali. Loop digunakan untuk mengeksekusi kode yang sama berulang</p>
+        <p> kali, sehingga dapat digunakan untuk mengulangi tindakan atau operasi tertentu.</p>
+        <h2>2. Apakah ada syntak looping selain do,while,do-while dan for ?</h2>
+        <p>For-in loop: digunakan untuk mengeksekusi kode untuk setiap elemen dalam objek atau array.</p>
+        <p>For-of loop: mirip dengan for-in loop, namun for-of loop akan mengeksekusi</p>
+        <p> kode untuk setiap elemen dalam objek atau array yang diiterasi, bukan indeksnya.</p>
+        <h2>3. Program mencari kelipatan 5 dari 100 dengan metode loop while!</h2>
+        <p>klik tombol dibawah!</p>
+        <p>Klik tombol di bawah ini untuk mengetahui kelipatan 5 dari 100:</p>
+
+<button onclick="findMultiples()">Cek Kelipatan</button>
+<p id="result"></p>
+<script>
+function findMultiples() {
+  var result = "";
+  var i = 5;
+  while (i <= 100) {
+    result += i + " ";
+    i += 5;
+  }
+  document.getElementById("result").innerHTML = result;
+}
+</script>
+
+</div>
+</div>
+</body>
+</html>
